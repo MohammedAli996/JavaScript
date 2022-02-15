@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Steen,Papier,Schaar</title>
+    <style>
+        body {
+    background-color: white;
+}
+
+* {
+    font-family: 'Work Sans', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.4em;
+    word-spacing: 0.2em;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+#f3 {
+    top: 33%;
+    position: absolute;
+    left: 63%;
+    transition: 0.2s;
+}
+
+#f2 {
+    top: 33%;
+    position: absolute;
+    left: 43%;
+    transition: 0.2s;
+}
+
+#f1 {
+    top: 35%;
+    position: absolute;
+    left: 23%;
+    transition: 0.2s;
+}
+
+#h1 {
+    position: absolute;
+    left: 42%;
+}
+
+#b1 {
+    top: 60%;
+    left: 44.5%;
+    position: absolute;
+    background-color: black;
+    border-radius: 4px;
+    color:white;
+    border: 3px solid black;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#b2 {
+    top: 60%;
+    left: 24%;
+    position: absolute;
+    background-color: black;
+    border-radius: 4px;
+    color:white;
+    border: 3px solid black;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#b3 {
+    top: 60%;
+    left: 65%;
+    position: absolute;
+    background-color: black;
+    border-radius: 4px;
+    color:white;
+    border: 3px solid black;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#b4 {
+    top: 60%;
+    left: 44.5%;
+    position: absolute;
+    background-color: black;
+    border-radius: 4px;
+    color:white;
+    border: 3px solid black;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#b5 {
+    top: 60%;
+    left: 24%;
+    position: absolute;
+    background-color: black;
+    border-radius: 4px;
+    color:white;
+    border: 3px solid black;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#b6 {
+    top: 60%;
+    left: 65%;
+    position: absolute;
+    background-color: black;
+    border-radius: 4px;
+    color:white;
+    border: 3px solid black;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+
+
+#b1:hover{
+    background-color: rgb(83, 83, 83);
+}
+
+#b2:hover {
+    background-color: rgb(83, 83, 83);
+}
+
+
+#b3:hover {
+    background-color: rgb(83, 83, 83);
+}
+
+#b4:hover {
+    background-color: rgb(83, 83, 83);
+}
+
+#b5:hover {
+    background-color: rgb(83, 83, 83);
+}
+
+#b6:hover {
+    background-color: rgb(83, 83, 83);
+}
+
+#f3:hover {
+    transform: scale(1.2);
+}
+#f2:hover {
+    transform: scale(1.2);
+}
+
+#f1:hover {
+    transform: scale(1.2);
+}
+
+
+#winnaar {
+    font-size: 1em;
+    position: absolute;
+    left: 33%;
+    top: 80%;
+    background-color: black;
+    padding-left: 8px;
+    padding-right: 8px;
+    color: white
+}
+
+#naam {
+    position: absolute;
+    left: 47%;
+    top: 95%;
+    font-size: 0.6em;
+    color: black
+}
+
+    @import url('https://fonts.googleapis.com/css?family=Work+Sans');
+</style>
+</head>
+<body>
+    <div id="speler1">
+        <h1 id="h1"></h1>
+        <img id="f1" src="rock.png" alt="">
+        <img id="f2" src="scissors.png" alt="">
+        <img id="f3" src="paper.png" alt="">
+    </div>
+    <button id="b3" onclick="papier1()">Papier</button>
+    <button id="b2" onclick="steen1()">Steen</button>
+    <button id="b1" onclick="schaar1()">Schaar</button>
+
+    <button id="b4" onclick="schaar2()">Schaar</button>
+    <button id="b5" onclick="steen2()">Steen</button>
+    <button id="b6" onclick="papier2()">Papier</button>
+
+    <div id="speel">
+        <h2 id="winnaar"></h2>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
